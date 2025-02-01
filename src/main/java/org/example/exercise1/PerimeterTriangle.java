@@ -24,7 +24,7 @@ public class PerimeterTriangle {
 
         if (triangleIsExist(side_1,side_2,side_3)){
             double res = side_1 + side_2 + side_3;
-            System.out.printf("Res = %.3f", res);
+            System.out.printf("Perimeter: %.3f", res);
         }else {
             System.out.println("It isn't triangle");
         }
