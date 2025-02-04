@@ -5,9 +5,13 @@ import java.util.Scanner;
 
 public class NegativeAverage {
     public static void main(String[] args) {
-        int n;
         int[] arr;
         Scanner scanner = new Scanner(System.in);
+        int n;
+        while (!scanner.hasNextInt()){
+            System.out.println("Couldn't parse a number. Please, try again");
+            scanner.next();
+        }
         n = scanner.nextInt();
         if (n>0){
             arr = new int[n];
